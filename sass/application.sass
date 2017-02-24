@@ -1,0 +1,137 @@
+// --------------------------------------------------------------------------------
+// Sass Application Styles
+// --------------------------------------------------------------------------------
+// Variables
+@import "normalize"
+@import "welcome"
+@import "notes"
+@import "notespost"
+@import "projects"
+@import "contact"
+
+$dark: #333
+$hover: #444
+$footer: #d8d8d8
+$blue: #50E3c2
+$bluehover: #40b59b
+$golden: #ffd75a
+$border: #eeeeee
+
+// Mixins
+
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+
+/* PLUGINS */
+/*******************  BASE ***************/
+// the padding wil not add to the width of each column
+*
+  box-sizing: border-box
+body
+  font-family: 'Raleway', sans-serif
+
+.wrapper
+  width: 90%
+  margin: 0 auto
+
+.wrapperPadding
+  padding: 4rem 0
+
+.clearfix:before,
+.clearfix:after
+  content: " "
+  display: table
+
+.clearfix:after
+  clear: both
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol
+  color: $dark
+
+h1
+  font-size: 2.5rem
+
+h2
+  font-size: 2rem
+
+h3
+  font-size: 1.75rem
+
+h4
+  font-size: 1.5rem
+
+h5
+  font-size: 1.25rem
+
+h6
+  font-size: 1rem
+
+p, li
+  font-size: 1.1rem
+  line-height: 1.75
+
+p, ul, ol
+  margin: 0 0 1.6em 0
+
+
+
+/******************* LAYOUT ***************/
+
+/* NAVIGATION */
+#mainNavigation
+  padding: 2.5em 5%
+  border-bottom: 1px solid $border
+  .name
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 0.9em
+    letter-spacing: 4px
+    color: $dark
+    padding: 1rem 1rem
+    border: 1px solid $border
+    text-decoration: none
+    float: left
+    &:hover
+      color: $hover
+  .divide
+    color: $golden
+  nav
+    float: right
+    padding-top: 1.5rem
+    a
+      color: $dark
+      text-decoration: none
+      margin: 0 1rem
+      font-size: 1.5rem
+      &:hover
+        color: $hover
+
+
+#pageTitle
+  // border-bottom: 1px solid $border
+  padding: 1.1em 0
+  text-align: center
+  font-size: 2.2em
+  font-weight: 200
+  // text-transform: uppercase
+
+/* FOOTER */
+#mainFooter
+  background: $footer
+  padding: 1.5em 5% 2.5em
+  //border-top: 1px solid $golden
+  margin-top: 40px
+  .copyright
+    float: left
+    font-size: 0.9em
+    margin: 0
+    color: #fff
+nav
+  float: right
+  i
+    color: #fff
+    margin-left: 1em
+    padding-top: 0.2em
+    &:hover
+      color: $hover
