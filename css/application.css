@@ -404,7 +404,7 @@ template {
 
 /* CONTENT */
 .homeContent {
-  margin-bottom: 55px; }
+  margin-bottom: 98px; }
   .homeContent h2 {
     font-size: 2.2rem;
     text-transform: uppercase; }
@@ -688,7 +688,7 @@ p, ul, ol {
 #mainFooter {
   background: #d8d8d8;
   padding: 1.5em 5% 2.5em;
-  margin-top: 40px; }
+  margin-top: 90px; }
   #mainFooter .copyright {
     float: left;
     font-size: 0.9em;
